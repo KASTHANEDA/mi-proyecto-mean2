@@ -1,29 +1,18 @@
 .menu {
-    display: flex;
-    justify-content: center;
-    /* align-items: end; */
-    font-family: "Bebas Neue", sans-serif;
-    font-size: large;
-
-     /* justify-content: flex-end; */
-    align-items: center;
-    /* font-family: "Bebas Neue", sans-serif; */
-    /* font-size: x-large; */
-    background-color: transparent;
-    /* background: rgb(18, 25, 39); */
-    /* transition: all 0.5s;
-    z-index: 997;
-    padding: 30px 0;
-     */
+  display: flex;
+  justify-content: column;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: large;
+  align-items: center;
+  background-color: transparent;
   height: 100%;
-     /* background: rgba(2, 180, 2, 0.87);  */
-    background: linear-gradient(
-      0deg,
-      rgba(252, 252, 252, 0.4413223907727153) 0%,
-      rgba(0, 0, 0, 0.5701739313889618) 100%
-    );
- 
-  }
+
+  background: linear-gradient(
+    0deg,
+    rgba(252, 252, 252, 0.4413223907727153) 0%,
+    rgba(0, 0, 0, 0.5701739313889618) 100%
+  );
+}
 
 .circulo {
   background-color: blue;
@@ -34,7 +23,6 @@
     color: white;
 
   } */
-  .menulista {
-    color: red;
-
-  }
+.menulista {
+  color: red;
+}

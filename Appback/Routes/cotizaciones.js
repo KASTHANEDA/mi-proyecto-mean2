@@ -1,5 +1,8 @@
 import express from "express";
 import cotSchema from "../models/cotizaciones.model.js"
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+
 const router = express.Router();
 
 //Voy a crear mi usuario
@@ -10,6 +13,18 @@ router.post('/cotizaciones', (require, response) => {
     .then((data) => response.json(data))
     .catch((error)=> response.json({ message: error }))
 });
+
+// post registro usuario
+
+router.post("/AddCotizaciones", async (require, response) => {
+    try {
+    //  require.body.password = bcrypt.hashSync(require.body.password, 12);
+      const coti = await cotSchema.create(require.body);
+      response.json(cotSchema);
+    } catch (error) {
+      response.json({ error: error.message });
+    }
+  });
 
 //Voy a crear mi arreglo de usuarios
 router.post('/cotizacionesMany', (require, response) => {

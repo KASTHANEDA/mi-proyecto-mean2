@@ -7,6 +7,6 @@ const router = express.Router();
 //router.use('',checkToken,usersRoutes);
 router.use("", usersRoutes);
 router.use("", checkToken, cotizaciones);
- //router.use('',cotizaciones);
+ //router.use("",cotizaciones);
 
 export default router;

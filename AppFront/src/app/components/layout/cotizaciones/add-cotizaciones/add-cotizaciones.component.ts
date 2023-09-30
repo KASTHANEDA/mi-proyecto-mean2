@@ -13,6 +13,7 @@ export class AddCotizacionesComponent {
   router = inject(Router);
 
   formulario: FormGroup;
+  
   cotizacionServices = inject(cotizacionesServices)
 
 
