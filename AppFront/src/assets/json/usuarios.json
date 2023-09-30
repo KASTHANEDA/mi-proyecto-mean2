@@ -1,0 +1,36 @@
+[
+    {
+        "nombre":"Paola",
+        "Apellido":"Sanchez",
+        "edad":29,
+        "datosBasicos":{
+            "direccion":"LOLA PALUZA",
+            "Telefono":"6515216165"
+        }
+    },
+    {
+        "nombre":"Andres",
+        "Apellido":"Sanchez",
+        "edad":45,
+        "datosBasicos":{
+            "direccion":"LOLA PALUZA",
+            "Telefono":"6515216165"
+        }
+    },{
+        "nombre":"Juan",
+        "Apellido":"Perilla",
+        "edad":78,
+        "datosBasicos":{
+            "direccion":"LOLA PALUZA",
+            "Telefono":"6515216165"
+        }
+    },{
+        "nombre":"Camila",
+        "Apellido":"fuentes",
+        "edad":15,
+        "datosBasicos":{
+            "direccion":"LOLA PALUZA",
+            "Telefono":"6515216165"
+        }
+    }
+]

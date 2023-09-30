@@ -1,0 +1,20 @@
+.small-footer{
+    display: flex;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+    font-size: 14px; 
+
+    /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: larger;  
+  /* background-color: transparent; */
+
+  background: rgb(252, 252, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 252, 252, 0.9413223907727153) 0%,
+    rgba(0, 0, 0, 0.9701739313889618) 100%
+  );
+}

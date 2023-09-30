@@ -1,0 +1,107 @@
+<nav class="menu navbar navbar-expand-lg  py-2 sticky-top  mb-2 mb-md-0 me-md-auto link-body-emphasis text-decoration-none "  >
+    <div class="container-fluid">
+        <!--LOGO  -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand py-2" href="index.html">
+            <img src="assets/img/LOGO_BLANCO.png" alt="Logo" width="80" height="60">
+
+        </a>
+
+        <div class="menulista collapse  navbar-collapse " id="navbarSupportedContent"  >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+              
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="somos">Quiénes somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="servicios" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Maritimo">Transporte Maritimo</a></li>
+                        <li><a class="dropdown-item" href="Terrestre">Transporte Nacional </a></li>
+                        <li><a class="dropdown-item" href="Aduana">Aduana</a></li>
+                        <li><a class="dropdown-item" href="Aereo">Transporte Aerero</a></li>                   
+                        <li *ngIf="userServices.isLogged()">
+                            <a class="dropdown-item" href="cotizaciones">cotizaciones</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register">Contactanos</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <button *ngIf="!userServices.isLogged()" type="button" class="btn btn-success" routerLink="login" routerLinkActive="active" >
+                        
+                        Login</button>
+
+                </li>
+
+                <li *ngIf="userServices.isLogged()" >
+                    <button   (click)="onClickLogout()" type="button" class="btn btn-secondary">
+                        logout
+                    </button>
+                </li>
+
+             
+
+            </ul>
+
+            <!-- BOTON QUE CAMBIA EL TEMA  -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown w-25" data-bs-theme="light">
+                    <button class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                        id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                        data-bs-display="static">
+                        <svg class="bi my-1 theme-icon-active" width="16" height="16" fill="currentColor">
+                            <use href="#circle-half"></use>
+                        </svg>
+                        <span class="d-lg-none ms-2">Toggle theme</span>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end px-1" aria-labelledby="bd-theme">
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center"
+                                data-bs-theme-value="light">
+                                <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                                    <use href="#sun-fill"></use>
+                                </svg>
+                                Light
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center"
+                                data-bs-theme-value="dark">
+                                <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                                    <use href="#moon-stars-fill"></use>
+                                </svg>
+                                Dark
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active"
+                                data-bs-theme-value="auto">
+                                <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                                    <use href="#circle-half"></use>
+                                </svg>
+                                Auto
+                            </button>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

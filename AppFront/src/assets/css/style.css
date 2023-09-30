@@ -1,0 +1,63 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&family=Roboto&display=swap');
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-image: url('../../../../assets/img/hero-bg.png');
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+body {
+  margin: 1px;
+  padding: 1px;
+  background-color: transparent;  
+  background-image: url('../../../../assets/img/hero-bg.png');
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.productos {
+  display: grid;
+  align-items: center;
+}
+.servicios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.submenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactenos {
+  display: flex;
+  flex-direction: column;
+  
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;  
+  align-items: center;
+  
+}
+
+

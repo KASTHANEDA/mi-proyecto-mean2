@@ -1,0 +1,109 @@
+
+<head>
+  <title>Formulario de Cotización</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h2>Formulario de Cotización</h2>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <label for="idCot">ID de Cotización:</label>
+    <input type="number" id="idCot" name="idCot" required>
+
+    <label for="Cliente">Cliente:</label>
+    <input type="text" id="Cliente" name="Cliente" required>
+
+    <label for="Modalidad">Modalidad:</label>
+    <input type="text" id="Modalidad" name="Modalidad" required>
+
+    <label for="CiudadOrigen">Ciudad de Origen:</label>
+    <input type="text" id="CiudadOrigen" name="CiudadOrigen" required>
+
+    <label for="DireccionOrigen">Dirección de Origen:</label>
+    <input type="text" id="DireccionOrigen" name="DireccionOrigen" required>
+
+    <label for="CiudadDestino">Ciudad de Destino:</label>
+    <input type="text" id="CiudadDestino" name="CiudadDestino" required>
+
+    <label for="DireccionDestino">Dirección de Destino:</label>
+    <input type="text" id="DireccionDestino" name="DireccionDestino" required>
+
+    <label for="Asunto">Asunto:</label>
+    <input type="text" id="Asunto" name="Asunto" required>
+
+    <label for="ClaseMatId">Clase Mat Id:</label>
+    <input type="number" id="ClaseMatId" name="ClaseMatId" required>
+
+    <label for="TipoNegocio">Tipo de Negocio:</label>
+    <input type="text" id="TipoNegocio" name="TipoNegocio" required>
+
+    <label for="ModoTransporte">Modo de Transporte:</label>
+    <input type="text" id="ModoTransporte" name="ModoTransporte" required>
+
+    <label for="TerminosNegociacion">Términos de Negociación:</label>
+    <input type="text" id="TerminosNegociacion" name="TerminosNegociacion" required>
+
+    <label for="EstadoColor">Estado Color:</label>
+    <input type="text" id="EstadoColor" name="EstadoColor" required>
+
+    <label for="diasTransito">Días de Tránsito:</label>
+    <input type="number" id="diasTransito" name="diasTransito" required>
+
+    <label for="VigenciaOferta">Vigencia de Oferta:</label>
+    <input type="text" id="VigenciaOferta" name="VigenciaOferta" required>
+
+    <label for="ValorDeclarado">Valor Declarado:</label>
+    <input type="number" id="ValorDeclarado" name="ValorDeclarado" required>
+
+    <label for="valorCif">Valor CIF:</label>
+    <input type="number" id="valorCif" name="valorCif" required>
+
+    <label for="ValorCifCalculado">Valor CIF Calculado:</label>
+    <input type="number" id="ValorCifCalculado" name="ValorCifCalculado" required>
+
+    <label for="TotalGastosOrigen">Total Gastos Origen:</label>
+    <input type="number" id="TotalGastosOrigen" name="TotalGastosOrigen" required>
+
+    <label for="moneda">Moneda:</label>
+    <input type="text" id="moneda" name="moneda" required>
+
+    <label for="trm">TRM:</label>
+    <input type="number" id="trm" name="trm" required>
+
+    <label for="factorEuroDollar">Factor Euro-Dollar:</label>
+    <input type="number" id="factorEuroDollar" name="factorEuroDollar" required>
+
+    <label for="descripcionMercancia">Descripción de Mercancía:</label>
+    <input type="text" id="descripcionMercancia" name="descripcionMercancia" required>
+
+    <label for="fechaCreacion">Fecha de Creación:</label>
+    <input type="text" id="fechaCreacion" name="fechaCreacion" required>
+
+    <label for="fechaModificacion">Fecha de Modificación:</label>
+    <input type="text" id="fechaModificacion" name="fechaModificacion" required>
+
+    <label for="PaisOrigen">País de Origen:</label>
+    <input type="text" id="PaisOrigen" name="PaisOrigen" required>
+
+    <label for="PaisDestino">País de Destino:</label>
+    <input type="text" id="PaisDestino" name="PaisDestino" required>
+
+    <label for="fechaProximaRevision">Fecha de Próxima Revisión:</label>
+    <input type="text" id="fechaProximaRevision" name="fechaProximaRevision" required>
+
+    <label for="idProveedores">ID de Proveedores:</label>
+    <input type="number" id="idProveedores" name="idProveedores" required>
+
+    <label for="Servicios">Servicios:</label>
+    <input type="text" id="Servicios" name="Servicios" required>
+
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" name="estado" required>
+
+    <label for="comercial">Comercial:</label>
+    <input type="text" id="comercial" name="comercial" required>
+
+    <input type="submit" value="Enviar" class="btn btn-primary" >
+  </form>
+</body>
