@@ -16,14 +16,21 @@ router.post('/cotizaciones', (require, response) => {
 
 // post registro usuario
 
-router.post("/AddCotizaciones", async (require, response) => {
-    try {
-    //  require.body.password = bcrypt.hashSync(require.body.password, 12);
-      const coti = await cotSchema.create(require.body);
-      response.json(cotSchema);
-    } catch (error) {
-      response.json({ error: error.message });
-    }
+router.post("/AddCotizaciones1",  (require, response) => {
+    const coti = cotSchema(require.body);
+    coti
+      .save()
+      .then((data) => response.json(data))
+      .catch((error) => response.json({ message: error }));
+  });
+
+
+  router.post("/register", (require, response) => {
+    const coti = cotSchema(require.body);
+    coti
+      .save()
+      .then((data) => response.json(data))
+      .catch((error) => response.json({ message: error }));
   });
 
 //Voy a crear mi arreglo de usuarios
